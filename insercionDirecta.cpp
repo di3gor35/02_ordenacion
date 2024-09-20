@@ -16,9 +16,9 @@ void mostrarArreglo(int arreglo[], int n){
 
 void insercionDirecta(int arreglo[],int n){
 	int aux, k;
-	for(int i= 1;i<=n;i++){
+	for(int i= 1;i<n;i++){
 		aux = arreglo[i];
-		k = i -1;
+		k = i-1;
 		while(k>=0 && aux < arreglo[k]){
 			arreglo[k+1] = arreglo[k];
 			k--;
